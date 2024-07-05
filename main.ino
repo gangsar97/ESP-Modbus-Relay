@@ -50,7 +50,6 @@ void loop() {
   digitalWrite(Relay_2, modbus.Coil(Relay2_address));
   digitalWrite(Relay_3, modbus.Coil(Relay3_address));
   digitalWrite(Relay_4, modbus.Coil(Relay4_address));
-
-  yield();
+ 
   delay(100);
 }
