@@ -1,4 +1,4 @@
-* Relay yang dapat dikontrol mengunakan protokol Modbus RTU
+* Relay yang dapat dikontrol mengunakan protokol Modbus RTU menggunakan microcontroller ESP8266 atau ESP32
 
 * Library yang digunakan antara lain:
  1.  modbus-esp8266 by emelianov https://github.com/emelianov/modbus-esp8266
