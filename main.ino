@@ -27,16 +27,17 @@ SoftwareSerial swSerial(RX_pin, TX_pin);
 ModbusRTU modbus;
 
 void setup() {
-  pinMode(potPin, INPUT);
-  pinMode(pinButton, INPUT_PULLUP);
   pinMode(Relay_1, OUTPUT);
   pinMode(Relay_2, OUTPUT);
   pinMode(Relay_3, OUTPUT);
   pinMode(Relay_4, OUTPUT);
-  Serial.begin(9600, SERIAL_8N1);
+  
+  Serial.begin(9600);
   swSerial.begin(BAUD_RATE, PARITY);
+  
   modbus.begin(&swSerial);
   modbus.slave(SLAVE_ID);
+  
   modbus.addCoil(Relay1_address);
   modbus.addCoil(Relay2_address);
   modbus.addCoil(Relay3_address);
