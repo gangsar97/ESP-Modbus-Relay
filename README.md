@@ -1,7 +1,7 @@
 Relay yang dapat dikontrol mengunakan protokol Modbus RTU menggunakan microcontroller ESP8266 atau ESP32
 
 Komponen yang digunakan adalah:
- * ESP9266
+ * ESP8266
  * Relay Module 4 Channel
  * RS-485 to UART Converter 
 
